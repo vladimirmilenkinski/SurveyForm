@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета за хотелски комплекс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Анкета за хотелски комплекс</h1>
+    <p>Благодарим ви, че избрахте нашия хотелски комплекс. /моля, отделете няколко минути, за да поптлните следната анкета. Вашите отговори ще ни помогнат да подобрим услугите си.</p>
+
+    <form id="hotelSurveyForm">
+        <!-- question 1 -->
+        <div class="form-group">
+            <label for="q1">1. Как оценявате общото си удовлетворение от престоя?</label>
+        <select name="q1" id="q1" required>
+            <option value="">Възберете отговор</option>
+            <option value="1">Отлично</option>
+            <option value="2">Много добро</option>
+            <option value="3">Средно</option>
+            <option value="4">Незадоволително</option>
+            <option value="5">Много незадоволително</option>
+        </select>
+        </div>
+
+        <!-- question 2 -->
+        <div class="form-group">
+            <span>2. Бихте ли препоръчали нашият комплекс на приятели?</span>
+            <div class="options">
+                <label>
+                    <input type="radio" name="q2" value="1"> Да
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="2"> Не
+                </label>
+            </div>
+        </div>
+        <!-- question 3 -->
+        <div class="form-group">
+            <label for="q3">3. Какво ви впечатли най-много?</label>
+            <textarea name="q3" id="q3" cols="30" rows="10" placeholder="Въведете вашия отговор"></textarea>
+        </div>
+
+        <!-- question 4 -->
+        <div class="form-group">
+            <span>4. Кои от следните услуги използвахте?</span>
+            <div class="options">
+                <label>
+                    <input type="checkbox" name="q4[]" value="Рецепция"> Рецепция
+                </label>
+                <label>
+                    <input type="checkbox" name="q4[]" value="Ресторант"> Ресторант
+                </label>
+                <label>
+                    <input type="checkbox" name="q4[]" value="Спа">Спа
+                </label>
+                <label>
+                    <input type="checkbox" name="q4[]" value="Басейн"> Басейн
+                </label>
+                <label>
+                    <input type="checkbox" name="q4[]" value="Фитнес"> Фитнес
+                </label>
+            </div>
+        </div>
+
+        <!-- question 5 -->
+        <div class="form-group">
+            <label for="q5">5. Как оценявате чистотата в стаите?></label>
+            <select name="q5" id="q5" required>
+                <option value="">Изберете отговор</option>
+                <option value="1">Отлично</option>
+                <option value="2">Много добро</option>
+                <option value="3">Средно</option>
+                <option value="4">Незадоволително</option>
+                <option value="5">Много незадоволително</option>
+            </select>
+        </div>
+
+        <!-- question 6 -->
+        <div class="form-group">
+            <span>6. Как оценявате обслужването от персонала? (1-5)?</span>
+            <div class="options">
+                <label>
+                    <input type="radio" name="q6" value="1"> 1
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="2"> 2
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="3"> 3
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="4"> 4
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="5"> 5
+                </label>
+            </div>
+        </div>
+
+        <!-- question 7 -->
+        <div class="form-group">
+            <span>7. Как оценявате процеса на настаняване? </span>
+            <div class="options">
+                <label>
+                    <input type="radio" name="q7" value="Отлично" required> Отлично
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="Добро"> Добро
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="Средно"> Средно
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="Лошо"> Лошо
+                </label>
+            </div>
+        </div>
+
+        <!-- question 8 -->
+        <div class="form-group">
+            <label for="q8">8. Коментари по настаняването</label>
+            <textarea name="q8" id="q8" cols="30" rows="10" placeholder="Вашият коментар"></textarea>
+        </div>
+
+        <!-- question 9 -->
+        <div class="form-group">
+            <span>9. Колко е вероятно да се върнете отново?</span>
+            <div class="options">
+                <label>
+                    <input type="radio" name="q9" value="Много вероятно" required> Ммного вероятно
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="Вероятно"> Вероятно
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="Малко вероятно"> Малко вероятно
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="Няма вероятност"> Няма вероятност
+                </label>
+            </div>
+        </div>
+
+        <!-- question 10 -->
+        <div class="form-group">
+            <label for="q10">10. Как оценявате ресторантските ни услуги?</label>
+            <select name="q10" id="q10" required>
+                <option value="">Изберете ниво</option>
+                <option value="1">1 - Отлично</option>
+                <option value="2">2 - Много добро</option>
+                <option value="3">3 - Средно</option>
+                <option value="4">4 - Незадоволително</option>
+                <option value="5">5 - Много незадоволително</option>
+            </select>
+        </div>
+
+        <!-- question 11 -->
+        <div class="form-group">
+            <label for="q11">11. Кое ястие ви хареса най-много?</label>
+            <input type="text" name="q11" id="q11" placeholder="Вашият отговор">
+        </div>
+
+        <!-- question 12 -->
+        <div class="form-group">
+            <span>12. Срещнахте ли проблеми през престоя си?</span>
+            <div class="options">
+                <label>
+                    <input type="radio" name="q12" value="Да" required> Да
+                </label>
+                <label>
+                    <input type="radio" name="q12" value="Не"> Не
+                </label>
+            </div>
+        </div>
+
+        <!-- question 13 -->
+        <div class="form-group">
+            <label for="q13">13. Ако отговорихте "Да", опишете проблемите.</label>
+            <textarea name="q13" id="q13" cols="30" rows="10" placeholder="Въведете вашия отговор"></textarea>
+        </div>
+
+        <!-- question 14 -->
+        <div class="form-group">
+            <span>14. Как оценявате атмосферата на комплекса? (1-5, като 5 е най-приятна)</span>
+            <div class="options">
+                <label>
+                    <input type="radio" name="q14" value="1" required> 1
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="2"> 2
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="3"> 3
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="4"> 4
+                </label>
+                <label>
+                    <input type="radio" name="q14" value="5"> 5
+                </label>
+            </div>
+        </div>
+
+        <!-- question 15 -->
+        <div class="form-group">
+            <label for="q15">15. Допълнителни коментари или предложения</label>
+            <textarea name="q15" id="q15" cols="30" rows="10" placeholder="Вашият коментар"></textarea>
+        </div>
+        <!-- submit button -->
+        <div class="form-group">
+            <button type="submit" class="btn">Изпрати</button>
+        </div>
+    </form>
+
+    <! -- statistics -->
+   <div class="form-group">
+       <button id="viewStats" type="button" class="btn">Виж статистика</button>
+   </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
